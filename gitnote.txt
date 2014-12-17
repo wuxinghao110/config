@@ -1,0 +1,23 @@
+git reflog   恢复
+
+git reset    退回
+
+
+
+要学的是
+
+git diff
+	git diff  origin/<远程分支名> 
+	git diff  <本地分支名>
+
+git fetch
+	
+
+git merge
+
+
+git pull
+	
+
+git push
+    git push origin <远程分支名>

@@ -50,3 +50,4 @@ cp = cherry-pick
 ca = commit -a
 b = branch
 lol = log --pretty=oneline --abbrev-commit --graph --decorate
+hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short

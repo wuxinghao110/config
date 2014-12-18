@@ -20,5 +20,8 @@ git pull
 	
 
 git push
-    git push origin <本地分支名>::<远程分支名命名>   本地新建分支更新到远程写法
+	当本地分支存在，而远程该分支部存在时
+    git push origin <本地分支名>:<远程分支名命名>
+	
+	当本地分支和远程分支都存在，可不用写远程分支名
 	git push origin <本地分支名> 

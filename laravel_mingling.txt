@@ -1,0 +1,30 @@
+创建laravel项目
+composer create-project laravel/laravel  <projectName>
+composer create-project laravel/laravel  learnlaravel
+
+单个插件更新
+composer require "foo/bar:1.0.0"
+
+安装composer.json中的插件
+composer install
+
+更新composer.json中的插件（注意：如果是单个更新可以使用composer require “<插件名：版本号>”命令）
+composer update
+
+可以自动编写composer.json：（注意我们使用-n，这样就不用回答问题）
+composer init --require=foo/bar:1.0.0 -n
+composer.json内容
+{
+    "require": {
+        "foo/bar": "1.0.0"
+    }
+}
+
+
+
+composer dump-autoload 文件加载下
+
+php artisan serve启动服务器
+
+
+

@@ -1,23 +1,54 @@
+
+
+
 git reflog   恢复  
 
-git reset    退回
+git reset    1:重置废弃的研发代码
+	git reset 默认是git reset 
 
 
 
-要学的是
+git remote:远程主机名  默认为origin
 
 git diff
 	git diff  origin/<远程分支名> 
 	git diff  <本地分支名>
 
 git fetch
+	把远程主机上所有分支的更新拉到本地
+	git fetch origin
+		
+	拉远程特定的分支
+	git fetch origin <远程分支名>
 	
+	注：所取回的更新，在本地主机上要用"远程主机名/远程分支名"的形式读取
+	
+$ git branch -a
+* master
+  remotes/origin/master
+		
+	本地主机的当前分支是master，远程分支是origin/master。
 
+	
+git checkout -b newBrach origin/master
+	在远程主机上的master分支建立一个newBrach名字的分支
+	
 git merge
+	git merge 合并的目标分支 合并的来源分支
+	
+	git merge origin/master
+	表示在当前分支上合并origin/master这远程分支
 
 
 git pull
 	
+	git pull origin <远程分支名命名>:<本地分支名>
+	
+	
+	如果不写本地分支名，则默认pull到本地当前分支。
+	git pull origin <远程分支名命名>
+	
+	需要注意的是，git-pull也可以用来合并分支。 和git-merge的作用相同。 因此，如果你的本地分支已经有内容，则git-pull会合并这些文件，如果有冲突会报警。
 
 git push
 	当本地分支存在，而远程该分支部存在时

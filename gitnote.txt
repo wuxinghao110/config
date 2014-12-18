@@ -1,4 +1,4 @@
-git reflog   恢复
+git reflog   恢复  
 
 git reset    退回
 
@@ -20,4 +20,5 @@ git pull
 	
 
 git push
-    git push origin <远程分支名>
+    git push origin <本地分支名>::<远程分支名命名>   本地新建分支更新到远程写法
+	git push origin <本地分支名> 

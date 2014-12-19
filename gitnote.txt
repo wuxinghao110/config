@@ -1,4 +1,4 @@
-git reflog   恢复  
+git reflog   查看每一次提交的信息   可配合git reset还原被删除的提交。
 
 git reset    1:重置废弃的研发代码
 	git reset 默认是git reset 

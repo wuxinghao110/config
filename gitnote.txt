@@ -1,6 +1,3 @@
-
-
-
 git reflog   恢复  
 
 git reset    1:重置废弃的研发代码

@@ -31,7 +31,7 @@ git checkout -b newBrach origin/master
 	在远程主机上的master分支建立一个newBrach名字的分支
 	
 git merge
-	git merge 合并的目标分支 合并的来源分支
+	git merge 目标分支 来源分支         把目标分支合并到来源分支上
 	
 	git merge origin/master
 	表示在当前分支上合并origin/master这远程分支
@@ -52,4 +52,15 @@ git push
     git push origin <本地分支名>:<远程分支名命名>
 	
 	当本地分支和远程分支都存在，可不用写远程分支名
-	git push origin <本地分支名> 
+	git push origin <本地分支名>
+
+
+删除本地分支
+	非强制删除
+	git branch -d <本地分支名>
+	强制删除
+	git branch -D <本地分支名>
+
+删除远程分支	
+	git push origin :<远程分支名>
+

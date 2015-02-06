@@ -63,4 +63,7 @@ git push
 
 删除远程分支	
 	git push origin :<远程分支名>
+	
+Git Stash
+Git Stash pop
 

@@ -29,6 +29,16 @@ $ git branch -a
 	
 git checkout -b newBrach origin/master
 	在远程主机上的master分支建立一个newBrach名字的分支
+
+git fetch 
+	
+	git fetch  origin <远程分支名命名>:<本地分支名>
+	
+	
+	如果不写本地分支名，则默认pull到本地当前分支。
+	git fetch  origin <远程分支名命名>
+	
+	需要注意的是，git fetch 也可以用来更新分支。 和git merge配合使用最终效果会跟git pull一样。 因此，如果你的本地分支已经有内容，则git-fetch和git会合并这些文件，如果有冲突会报警。
 	
 git merge
 	git merge 目标分支 来源分支         把目标分支合并到来源分支上

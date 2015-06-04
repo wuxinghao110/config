@@ -30,7 +30,6 @@
 	sslCAinfo = /bin/curl-ca-bundle.crt
 [sendemail]
 	smtpserver = /bin/msmtp.exe
-
 [diff "astextplain"]
 	textconv = astextplain
 [rebase]
@@ -40,24 +39,24 @@
    email = wuxinghao110@163.com
 [alias]
     co = checkout
-	ci = commit
-	st = status
-	sts = status -s
-	pl = pull
-	ps = push
-	dt = difftool
-	l = log --stat
-	cp = cherry-pick
-	ca = commit -a
-	b = branch
-	lol = log --pretty=oneline --abbrev-commit --graph --decorate
-	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-	ll = log --oneline --decorate --color
-	lc = log --graph --color
-	rb = rebase
-	dci = dcommit
-	sbi = submodule init
-	sbu = submodule update
-	sbp = submodule foreach git pull
-	sbc = submodule foreach git co master
-	sbs = submodule status
+    ci = commit
+    st = status
+    sts = status -s
+    pl = pull
+    ps = push
+    dt = difftool
+    l = log --stat
+    cp = cherry-pick
+    ca = commit -a
+    b = branch
+    lol = log --pretty=oneline --abbrev-commit --graph --decorate
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    ll = log --oneline --decorate --color
+    lc = log --graph --color
+    rb = rebase
+    dci = dcommit
+    sbi = submodule init
+    sbu = submodule update
+    sbp = submodule foreach git pull
+    sbc = submodule foreach git co master
+    sbs = submodule status

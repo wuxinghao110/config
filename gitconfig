@@ -37,6 +37,7 @@
 [user]
    name = wuxing
    email = wuxinghao110@163.com
+   
 [alias]
     co = checkout
     ci = commit

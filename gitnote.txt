@@ -77,3 +77,5 @@ git push
 Git Stash
 Git Stash pop
 
+git clean -dxf  清楚未入库的文件
+git checkout .  退回所有修改

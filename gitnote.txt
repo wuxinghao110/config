@@ -49,11 +49,11 @@ git merge
 
 git pull
 	
-	git pull origin <远程分支名命名>:<本地分支名>
+	git pull --rebase origin <远程分支名命名>:<本地分支名>
 	
 	
 	如果不写本地分支名，则默认pull到本地当前分支。
-	git pull origin <远程分支名命名>
+	git pull  --rebase origin <远程分支名命名>
 	
 	需要注意的是，git-pull也可以用来合并分支。 和git-merge的作用相同。 因此，如果你的本地分支已经有内容，则git-pull会合并这些文件，如果有冲突会报警。
 
@@ -79,3 +79,18 @@ Git Stash pop
 
 git clean -dxf  清楚未入库的文件
 git checkout .  退回所有修改
+
+
+git pull  中 --rebase参数作用
+不用--rebase参数时候
+合并前：
+      D---E master
+     /
+A---B---C---F origin/master
+使用 merge 合并后：
+      D--------E  
+     /          \
+A---B---C---F----G   master, origin/master
+如果是 rebase 的方式，就不會有 G 合并点：
+A---B---C---F---D'---E'   master, origin/master
+注意到，其中 D’, E’ 的 commit SHA 序号跟本來 D, E 是不同的，应为算是砍掉重新 commit 了。

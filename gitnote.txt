@@ -1,4 +1,4 @@
-git reflog   查看每一次提交的信息   可配合git reset还原被删除的提交。
+git reflog   查看每一次提交的信息   可配合git reset还原被删除的提交。 非常重要，被挽救一次
 
 git reset    1:重置废弃的研发代码
 	git reset 默认是git reset 
@@ -74,8 +74,8 @@ git push
 删除远程分支	
 	git push origin :<远程分支名>
 	
-Git Stash
-Git Stash pop
+Git Stash   暂存分支修改代码
+Git Stash pop 解除暂存分支修改代码
 
 git clean -dxf  清楚未入库的文件
 git checkout .  退回所有修改
@@ -84,7 +84,7 @@ git checkout .  退回所有修改
 git pull  中 --rebase参数作用
 不用--rebase参数时候
 合并前：
-      D---E master
+      D---E master 
      /
 A---B---C---F origin/master
 使用 merge 合并后：
